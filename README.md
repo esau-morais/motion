@@ -2,7 +2,7 @@
 
 ![Framer Motion](https://repository-images.githubusercontent.com/157846876/70574400-9e6a-11e9-8708-22d4bf4c3322)
 
-## Why use Framer Motion?
+## What is Framer Motion?
 
 Think of Framer Motion as more of an improvement or reinvention of an existing animation library than a brand new one.
 
@@ -24,6 +24,7 @@ Framer Motion improves upon and simplifies the API in a way that couldn’t have
 - [ ] Animate Presence
 - [ ] Animating routes
 - [ ] Modal animation [1]
+- [ ] Modal animation [2]
 - [ ] Animating SVG's
 - [ ] Creating a loader
 - [ ] UseCycle Hook
