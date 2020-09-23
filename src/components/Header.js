@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 import { NavBar } from './index';
 
@@ -17,9 +18,15 @@ export default function Header() {
           />
         </svg>
       </div>
-      <div className="title">
+      <motion.div
+	className="title"
+	/* from */
+	initial={{ y: -150 }}
+	/* to */
+	animate={{ y: -10 }}
+      >
         <h1>Pizza Joint</h1>
-      </div>
+      </motion.div>
     </NavBar>
   )
 }

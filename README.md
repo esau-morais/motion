@@ -14,7 +14,7 @@ Framer Motion improves upon and simplifies the API in a way that couldn’t have
 
 - [X] Project setup
 - [X] Animating elements
-- [ ] Initital animation state
+- [X] Initital animation state
 - [ ] Transition options
 - [ ] Hover animations
 - [ ] Variants [1]

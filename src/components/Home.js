@@ -6,16 +6,17 @@ export default function Home() {
   return (
     <motion.div 
       className="home container"
-      animate={{ marginTop: "50px", opacity: .8 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
     >
       <motion.h2
-	animate={{ color: "#ff2994", fontSize: "50px", x: 0, y: -50 }}
+	animate={{}}
       >
         Welcome to Pizza Joint
       </motion.h2>
       <Link to="/base">
         <motion.button 
-	  animate={{ scale: 1.2 }}
+	  animate={{}}
 	>
           Create Your Pizza
         </motion.button>
