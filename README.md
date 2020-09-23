@@ -23,8 +23,8 @@ Framer Motion improves upon and simplifies the API in a way that couldn’t have
 import { motion } from 'framer-motion';
 ```
 
-3. Try to animate an element using `animate` attribute.
-⚠️ Remeber: you are not using more `css` syntax or attributes, they all are from Framer Motion
+3. Try to animate an element using `animate` attribute. <br />
+⚠️ Remember: you are not using more `css` syntax or attributes, they all are from Framer Motion
 
 ```
 export default function App() {
