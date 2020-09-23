@@ -24,6 +24,8 @@ export default function Header() {
 	initial={{ y: -150 }}
 	/* to */
 	animate={{ y: -10 }}
+	/* transition from... to */
+	transition={{ delay: .2, type: 'spring', stiffness: 100 }}
       >
         <h1>Pizza Joint</h1>
       </motion.div>

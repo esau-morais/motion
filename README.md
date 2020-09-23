@@ -44,7 +44,7 @@ export default function App() {
 
 You can notice two important things:
 
-1. `motion` always come before the html tag (just make shure on the documentation if Framer Motion supports)
+1. `motion` always comes before the html tag (just make shure on the [documentation](https://www.framer.com/api/motion/component) if Framer Motion supports)
 2. `animate` attribute pass an object (like the `style={{}}`)
 
 ## Goals
@@ -52,7 +52,7 @@ You can notice two important things:
 - [X] Project setup
 - [X] Animating elements
 - [X] Initital animation state
-- [ ] Transition options
+- [X] Transition options
 - [ ] Hover animations
 - [ ] Variants [1]
 - [ ] Variants [2]

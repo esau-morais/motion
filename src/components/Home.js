@@ -6,8 +6,12 @@ export default function Home() {
   return (
     <motion.div 
       className="home container"
+      /* from */
       initial={{ opacity: 0 }}
+      /* to */
       animate={{ opacity: 1 }}
+      /* transition from... to */
+      transition={{ delay: .4, duration: .6 }}
     >
       <motion.h2
 	animate={{}}

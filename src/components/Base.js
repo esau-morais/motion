@@ -6,7 +6,14 @@ export default function Base({ addBase, pizza }) {
   const bases = ['Classic', 'Thin & Crispy', 'Thick Crust'];
 
   return (
-    <div className="base container">
+    <motion.div className="base container"
+      /* from */
+      initial={{ x: '100vw' }}
+      /* to */
+      animate={{ x: 0 }}
+      /* transition from... to */
+      transition={{ type: 'spring', delay: .2 }}
+    >
 
       <h3>Step 1: Choose Your Base</h3>
       <ul>
@@ -23,8 +30,9 @@ export default function Base({ addBase, pizza }) {
       {pizza.base && (
         <motion.div 
 	  className="next"
-	  initial={{ x: '-100vw' }}
-	  animate={{ x: 0 }}
+	  initial={{ opacity: 0 }}
+	  animate={{ opacity: 1 }}
+	  transition={{ delay: .2 }}
 	>
           <Link to="/toppings">
             <button>Next</button>
@@ -32,6 +40,6 @@ export default function Base({ addBase, pizza }) {
         </motion.div>
       )}
 
-    </div>
+    </motion.div>
   )
 }
