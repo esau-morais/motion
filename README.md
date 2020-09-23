@@ -10,6 +10,43 @@ Framer Motion is the successor to Pose, which was one of the most popular animat
 
 Framer Motion improves upon and simplifies the API in a way that couldn’t have been done without breaking changes and rewriting. One difference is that whereas Framer Motion only has support for React, Pose has support for React-Native and Vue. If you’re currently using Pose I would recommend updating to Framer Motion because Pose has been depreciated.
 
+## How do I start?
+
+1. Install Framer Motion package.
+
+`npm install framer-motion` (if you are using `npm`) or 
+`yarn add framer-motion` (if you are using `yarn`)
+
+2. Import `motion` component in your file.
+
+```
+import { motion } from 'framer-motion';
+```
+
+3. Try to animate an element using `animate` attribute.
+⚠️ Remeber: you are not using more `css` syntax or attributes, they all are from Framer Motion
+
+```
+export default function App() {
+  return (
+    <motion.h2
+      animate={{ scale: 1.2 }}
+    >
+      Framer Motion Example
+    </motion.h2>
+  )
+}
+```
+
+4. See the code and try to learn it works.
+
+5. See this [playlist](https://www.youtube.com/playlist?list=PL4cUxeGkcC9iHDnQfTHEVVceOEBsOf07i) on YouTube about Framer Motion.
+
+You can notice two important things:
+
+1. `motion` always come before the html tag (just make shure on the documentation if Framer Motion supports)
+2. `animate` attribute pass an object (like the `style={{}}`)
+
 ## Goals
 
 - [X] Project setup
