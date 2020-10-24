@@ -51,11 +51,16 @@ You can notice two important things:
 
 - [X] Project setup
 - [X] Animating elements
+  - `animate`
 - [X] Initital animation state
+    - `initial`
 - [X] Transition options
-- [ ] Hover animations
-- [ ] Variants [1]
-- [ ] Variants [2]
+  - `transition`
+- [X] Hover animations
+  - `whileHover`
+- [X] Variants [1]
+    - `variants`
+- [X] Variants [2]
 - [ ] Keyframes
 - [ ] Repeating animations
 - [ ] Animate Presence

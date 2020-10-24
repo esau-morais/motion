@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function Home() {
   return (
-    <motion.div 
+    <motion.div
       className="home container"
       /* from */
       initial={{ opacity: 0 }}
@@ -13,15 +13,17 @@ export default function Home() {
       /* transition from... to */
       transition={{ delay: .4, duration: .6 }}
     >
-      <motion.h2
-	animate={{}}
-      >
+      <h2>
         Welcome to Pizza Joint
-      </motion.h2>
+      </h2>
       <Link to="/base">
-        <motion.button 
-	  animate={{}}
-	>
+        <motion.button
+          /* hover animation */
+          whileHover={{
+            scale: 1.2,
+            boxShadow: '0 0 0.5rem whitesmoke'
+          }}
+      	>
           Create Your Pizza
         </motion.button>
       </Link>
