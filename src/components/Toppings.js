@@ -1,23 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+// Container
+import { containerVariants } from '../utils/variants';
+// Button
+import { buttonVariants } from '../utils/variants';
 
-const containerVariants = {
-  hidden: {
-    opacity: 0,
-    x: '100vw'
-  },
-  visible: {
-    opacity: 1,
-    x: 0,
-    // we don't need to pass the "transition" prop anymore
-    // once is embed in "visible"
-    transition: {
-      type: 'spring',
-      delay: .2
-    }
-  }
-}
 
 export default function Toppings({ addTopping, pizza }) {
   let toppings = ['mushrooms', 'peppers', 'onions', 'olives', 'extra cheese', 'tomatoes'];
@@ -57,11 +45,9 @@ export default function Toppings({ addTopping, pizza }) {
 
       <Link to="/order">
         <motion.button
+          variants={buttonVariants}
           /* hover animation */
-          whileHover={{
-            scale: 1.2,
-            boxShadow: '0 0 0.5rem whitesmoke'
-          }}
+          whileHover="hover"
         >
           Order
         </motion.button>

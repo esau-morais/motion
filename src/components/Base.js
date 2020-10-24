@@ -3,22 +3,9 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 // Variants will replace the object used in the props "initial" and "animate"
 // Container
-const containerVariants = {
-  hidden: {
-    opacity: 0,
-    x: '100vw'
-  },
-  visible: {
-    opacity: 1,
-    x: 0,
-    // we don't need to pass the "transition" prop anymore
-    // once is embed in "visible"
-    transition: {
-      type: 'spring',
-      delay: .2
-    }
-  }
-}
+import { containerVariants } from '../utils/variants';
+// Button
+import { buttonVariants } from '../utils/variants';
 // Next
 const nextVariants = {
   hidden: {
@@ -86,11 +73,9 @@ export default function Base({ addBase, pizza }) {
 	      >
           <Link to="/toppings">
             <motion.button
+              variants={buttonVariants}
               /* hover animation */
-              whileHover={{
-                scale: 1.2,
-                boxShadow: '0 0 0.5rem whitesmoke'
-              }}
+              whileHover="hover"
             >
               Next
             </motion.button>

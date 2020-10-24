@@ -61,9 +61,12 @@ You can notice two important things:
 - [X] Variants [1]
     - `variants`
 - [X] Variants [2]
-- [ ] Keyframes
-- [ ] Repeating animations
-- [ ] Animate Presence
+- [X] Keyframes
+  - `[]`
+- [X] Repeating animations
+  - `yoyo`
+- [X] Animate Presence
+  - `AnimatePresence`
 - [ ] Animating routes
 - [ ] Modal animation [1]
 - [ ] Modal animation [2]
