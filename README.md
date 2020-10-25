@@ -14,38 +14,46 @@ Framer Motion improves upon and simplifies the API in a way that couldn’t have
 
 1. Install Framer Motion package.
 
-`npm install framer-motion` (if you are using `npm`) or 
-`yarn add framer-motion` (if you are using `yarn`)
+    `npm install framer-motion` (if you are using `npm`) 
+
+    or 
+
+    `yarn add framer-motion` (if you are using `yarn`)
 
 2. Import `motion` component in your file.
 
-```
-import { motion } from 'framer-motion';
-```
+    ```
+    import { motion } from 'framer-motion';
+    ```
 
-3. Try to animate an element using `animate` attribute. <br />
-⚠️ Remember: you are not using more `css` syntax or attributes, they all are from Framer Motion
+3. Try to animate an element using `animate` attribute. 
 
-```
-export default function App() {
-  return (
-    <motion.h2
-      animate={{ scale: 1.2 }}
-    >
-      Framer Motion Example
-    </motion.h2>
-  )
-}
-```
+    ⚠️ Remember: you are not using more `css` syntax or attributes, they all are from Framer Motion
+
+    ```
+    export default function App() {
+      return (
+        <motion.h2
+          animate={{ scale: 1.2 }}
+        >
+          Framer Motion Example
+        </motion.h2>
+      )
+    }
+    ```
 
 4. See the code and try to learn it works.
 
 5. See this [playlist](https://www.youtube.com/playlist?list=PL4cUxeGkcC9iHDnQfTHEVVceOEBsOf07i) on YouTube about Framer Motion.
 
-You can notice two important things:
+---
+
+⚠️ You can notice two important things:
 
 1. `motion` always comes before the html tag (just make shure on the [documentation](https://www.framer.com/api/motion/component) if Framer Motion supports)
 2. `animate` attribute pass an object (like the `style={{}}`)
+
+---
 
 ## Goals
 
