@@ -34,6 +34,7 @@ Framer Motion improves upon and simplifies the API in a way that couldn’t have
     export default function App() {
       return (
         <motion.h2
+        initial={{scale: 0}}
           animate={{ scale: 1.2 }}
         >
           Framer Motion Example
